@@ -1,0 +1,55 @@
+# Lab1 Waveguides
+
+This repository contains notebooks to validate that the core dependencies for
+the waveguides lab are installed and working. The intended workflow is VS Code
+with a Linux environment (local or WSL).
+
+## Prerequisites (Windows + WSL)
+
+- Windows 10/11 with WSL 2 enabled.
+- A Linux distribution installed via WSL (e.g., Ubuntu 22.04).
+- VS Code with the WSL extension installed.
+- Python 3.10+ available inside WSL.
+
+If you have not configured WSL yet, follow the official Microsoft setup guide and then open VS Code connected to WSL.
+
+## Open the project
+
+1. Open a terminal.
+2. Fork the repo using GitHub Web.
+3. Navigate to the repo folder (or clone it):
+	- `git clone <your-repo-url>`
+	- `cd cifoin-lab1`
+4. Open the folder in VS Code.
+
+## Create and select a Python environment
+
+From the VS Code window:
+
+1. Ensure `uv` is installed.
+2. Sync dependencies from `pyproject.toml`:
+	- `uv sync`
+3. Select the interpreter in VS Code:
+	- Command Palette -> Python: Select Interpreter -> choose the `.venv`
+	  created by `uv` (if prompted).
+
+## Install dependencies
+
+Use the repo's `pyproject.toml` via `uv`:
+
+```
+uv sync
+```
+
+## Run the notebook
+
+1. Open the notebook in VS Code:
+	- `WAVEGUIDES_Student.ipynb`
+2. Select the kernel named `cifoin-lab1` (or the `.venv` you created).
+3. Run the cells top-to-bottom.
+
+You should see the expected plots in the output cells.
+
+## Troubleshooting
+
+- Email: camilo.cano@upv.es
