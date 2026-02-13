@@ -1,4 +1,4 @@
-# Lab1 Waveguides
+# Laboratory 1. Waveguides
 
 This repository contains notebooks to validate that the core dependencies for
 the waveguides lab are installed and working. The intended workflow is VS Code
